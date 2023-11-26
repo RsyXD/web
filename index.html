@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbhak</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+
+<body>
+    <div class="container">
+
+        <header>
+            <h1>Starbhak Mart</h1>
+        </header>
+>
+        <div class="kotak">
+
+            <div class="kiri" id="section-to-print">
+
+                <select class="satu">
+                    <option hidden>Pilih Jenis Pemesanan</option>
+                    <option>Take Away</option>
+                    <option>Delivery</option>
+                </select>
+                <button class="dua"><span class="material-symbols-outlined"
+                        style="color: black !important; font-size: 16px; ">
+                        face
+                    </span>Mang Soleh</button>
+
+                <div class="belanja">
+                    <div class="barang" style="display: none;"> 
+                        <div class="detail-kiri">
+                            <p id="nama-barang" style="font-size: small; font-weight: 500;"></p>
+                            <p id="harga-satuan" style="text-align: right; font-size: small;"></p>
+                        </div>
+                        <div class="detail-kanan">
+                            <p class="normal">Unit Price : <span id="harga-banyak"></span></p>
+                            <p class="normal" style="display: flex; justify-content: space-between; gap: 4em;">Quantity : <span class="stock" id="stok-${itemName}"></span></p>
+                        </div>
+                        <button id="remove">
+                            <span class="material-symbols-outlined" id="hapus">
+                                delete
+                                </span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="jajan" id="section-to-print">
+                    <P>Discount : </P>
+                    <p id="totalPrice" style="display: none;"></p>
+                    <P style="display: flex; justify-content: space-between;">Tax : <span id="taxDiscount">0</span></P>
+                    <div class="pay">
+                        <p>Total Amount : </p>
+                        <p id="totalAmount">0</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="kanan">
+
+                <nav>
+                    <div class="nav_kiri">
+                        <p>Item List</p>
+                    </div>
+
+                    <div class="nav_kanan">
+                        
+                        <div class="cari"> 
+                            <span class="material-symbols-outlined" id="searchIcon">
+                                search
+                            </span>
+                            <input type="text" id="searchInput" placeholder="search" style="display: none;">
+                        </div>
+
+                        <span class="material-symbols-outlined">
+                            more_vert
+                        </span>
+
+                        <span class="material-symbols-outlined" id="sortByName">
+                            swap_vert
+                            </span>
+                    </div>
+                </nav>
+
+                <section>
+
+                    <div class="isi">
+                        <div class="foto">
+                            <img src="img/001063400_1547374107-sushi-2853382_1920.webp" alt="">
+                        </div>
+                        <p>Sushi</p>
+                        <h1>Rp. 3.000</h1>
+                    </div>
+
+
+                    <div class="isi">
+                        <div class="foto">
+                            <img src="img/nasi goreng.webp" alt="">
+                        </div>
+                        <p>Nasi Goreng</p>
+                        <h1>Rp. 12.000</h1>
+                    </div>
+
+                    <div class="isi">
+                        <div class="foto">
+                            <img src="img/egg sandwich.cms" alt="">
+                        </div>
+                        <p>Egg Sandwich</p>
+                        <h1>Rp. 5.000</h1>
+                    </div>
+
+
+                    <div class="isi">
+                        <div class="foto">
+                            <img src="img/Siomay.jpg" alt="">
+                        </div>
+                        <p>Siomay</p>
+                        <h1>Rp. 15.000</h1>
+                    </div>
+
+                    <div class="isi">
+                        <div class="foto">
+                            <img src="img/cireng.webp" alt="">
+                        </div>
+                        <p>Cireng</p>
+                        <h1>Rp. 2.000</h1>
+                    </div>
+
+                    <div class="isi">
+                        <div class="foto">
+                            <img src="img/es_kelapa.jpg" alt="">
+                        </div>
+                        <p>Es Kelapa Muda</p>
+                        <h1>Rp. 5.000</h1>
+                    </div>
+
+                    <div class="isi">
+                        <div class="foto">
+                            <img src="img/pempek.jpeg" alt="">
+                        </div>
+                        <p>Pempek</p>
+                        <h1>Rp. 10.000</h1>
+                    </div>
+
+                    <div class="isi">
+                        <div class="foto">
+                            <img src="img/kentang.jpeg" alt="">
+                        </div>
+                        <p>kentang</p>
+                        <h1>Rp. 15.000</h1>
+                    </div>
+
+                    <div class="isi">
+                        <div class="foto">
+                            <img src="img/bakso.jfif" alt="">
+                        </div>
+                        <p>Bakso</p>
+                        <h1>Rp. 10.000</h1>
+                    </div>
+
+                    <div class="isi">
+                        <div class="foto">
+                            <img src="img/lemon_tea.jpeg" alt="">
+                        </div>
+                        <p>lmeon Tea</p>
+                        <h1>Rp. 10.000</h1>
+                    </div>
+
+                    <div class="isi">
+                        <div class="foto">
+                            <img src="img/lemon_mint.jpeg" alt="">
+                        </div>
+                        <p>Lemon Mint</p>
+                        <h1>Rp. 8.000</h1>
+                    </div>
+
+                    <div class="isi">
+                        <div class="foto">
+                            <img src="img/soda.jpeg" alt="">
+                        </div>
+                        <p>Soda</p>
+                        <h1>Rp. 10.000</h1>
+                    </div>
+
+                    <div class="isi">
+                        <div class="foto">
+                            <img src="img/soto_mie.jpg" alt="">
+                        </div>
+                        <p>Soto Mie</p>
+                        <h1>Rp. 10.000</h1>
+                    </div>
+
+                    <div class="isi">
+                        <div class="foto">
+                            <img src="img/rawon_sapi.jfif" alt="">
+                        </div>
+                        <p>Rawon</p>
+                        <h1>Rp. 10.000</h1>
+                    </div>
+
+                    <div class="isi">
+                        <div class="foto">
+                            <img src="img/ayam_bakar.jpg" alt="">
+                        </div>
+                        <p>Ayam Bakar</p>
+                        <h1>Rp. 10.000</h1>
+                    </div>
+
+                    <div class="isi">
+                        <div class="foto">
+                            <img src="img/es_doger.jpg" alt="">
+                        </div>
+                        <p>Es Doger</p>
+                        <h1>Rp. 5.000</h1>
+                    </div>
+
+                    <div class="isi">
+                        <div class="foto">
+                            <img src="img/jus_mangga.jfif" alt="">
+                        </div>
+                        <p>Es Doger</p>
+                        <h1>Rp. 5.000</h1>
+                    </div>
+
+                    <div class="isi">
+                        <div class="foto">
+                            <img src="img/tempe_mendoan.jfif" alt="">
+                        </div>
+                        <p>Es Doger</p>
+                        <h1>Rp. 7.000</h1>
+                    </div>
+
+                    <div class="isi">
+                        <div class="foto">
+                            <img src="img/tahu_gejrot.jfif" alt="">
+                        </div>
+                        <p>Tahu Gejrot</p>
+                        <h1>Rp. 5.000</h1>
+                    </div>
+
+                    <div class="isi">
+                        <div class="foto">
+                            <img src="img/sata_ayam.jpg" alt="">
+                        </div>
+                        <p>Sate Ayam</p>
+                        <h1>Rp. 12.000</h1>
+                    </div>
+
+                    <div class="isi">
+                        <div class="foto">
+                            <img src="img/mie_aceh.jpg" alt="">
+                        </div>
+                        <p>Mie Aceh</p>
+                        <h1>Rp. 10.000</h1>
+                    </div>
+
+                    <div class="isi">
+                        <div class="foto">
+                            <img src="img/rendang.jfif" alt="">
+                        </div>
+                        <p>rendanf</p>
+                        <h1>Rp. 6.000</h1>
+                    </div>
+
+                    <div class="isi">
+                        <div class="foto">
+                            <img src="img/bakwan_jagung.jfif" alt="">
+                        </div>
+                        <p>Bakawn Jagug</p>
+                        <h1>Rp. 2.000</h1>
+                    </div>
+
+                    <div class="isi">
+                        <div class="foto">
+                            <img src="img/es_teh.jfif" alt="">
+                        </div>
+                        <p>Es Teh</p>
+                        <h1>Rp. 3.000</h1>
+                    </div>
+
+                    <div class="isi">
+                        <div class="foto">
+                            <img src="img/sambal_kentang.jfif" alt="">
+                        </div>
+                        <p>Sambal Kentang</p>
+                        <h1>Rp. 5.000</h1>
+                    </div>
+
+                    <div class="isi">
+                        <div class="foto">
+                            <img src="img/telur_asin.jpg" alt="">
+                        </div>
+                        <p>Telur Asin</p>
+                        <h1>Rp. 5.000</h1>
+                    </div>
+
+                    <div class="isi">
+                        <div class="foto">
+                            <img src="img/ketoprak_telur.webp" alt="">
+                        </div>
+                        <p>Ketoprak Telur</p>
+                        <h1>Rp. 12.000</h1>
+                    </div>
+
+                    <div class="isi">
+                        <div class="foto">
+                            <img src="img/bubur_ayam.jfif" alt="">
+                        </div>
+                        <p>Bubur Ayam</p>
+                        <h1>Rp. 10.000</h1>
+                    </div>
+
+                    <div class="isi">
+                        <div class="foto">
+                            <img src="img/es_cincau.jfif" alt="">
+                        </div>
+                        <p>Es Cincau </p>
+                        <h1>Rp. 5.000</h1>
+                    </div>
+
+                    <div class="isi">
+                        <div class="foto">
+                            <img src="img/matcha.jpg" alt="">
+                        </div>
+                        <p>Mathca</p>
+                        <h1>Rp. 8.000</h1>
+                    </div>
+
+                    <div class="isi">
+                        <div class="foto">
+                            <img src="img/nasi_uduk.jfif" alt="">
+                        </div>
+                        <p>nasi_uduk/p>
+                        <h1>Rp. 5.000</h1>
+                    </div>
+
+                    <div class="isi">
+                        <div class="foto">
+                            <img src="img/puding_coklat.jfif" alt="">
+                        </div>
+                        <p>Puding Coklat</p>
+                        <h1>Rp. 3.000</h1>
+                    </div>
+
+                </section>
+
+            </div>
+
+        </div>
+
+        <div class="payment">
+            <Button id="bayar">
+                <span class="material-symbols-outlined">
+                    shopping_cart
+                    </span>
+                <span>
+                    <p>Payment</p>
+                    <p>(CTRL + P)</p>
+                </span>
+            </Button>
+        </div>
+
+        <footer>
+            <p>Ready</p>
+        </footer>
+
+</body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+    <script src="search.js"></script>
+    <script src="short.js"></script>
+    <script src="print.js"></script>
+</html>
